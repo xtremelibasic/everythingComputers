@@ -1,0 +1,142 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	font-family:comic sans ms;
+	justify-content:center;
+}
+.page-wrapper{
+	width:100vw;
+	height:auto;
+	background-color:#ddd;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:-100;
+}
+nav{
+	background:#000000;
+	filter:opacity(0.8);
+	width:100vw;
+	height:10vh;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:0;
+}
+nav .logo{
+	line-height:80%;
+	color:#ffffff;
+}
+nav .logo h1{
+	position:absolute;
+	left:10rem;
+	top:1rem;
+}
+nav .logo p{
+	position:absolute;
+	left:12rem;
+	top:2rem;
+	font-weight:bold;
+}
+nav ul{
+	position:absolute;
+	right:10rem;
+	top:1rem;
+}
+nav ul li{
+	display:inline-block;
+	line-height:80%;
+	padding-left:3rem;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#ffffff;
+}
+nav ul li a:hover{
+	font-weight:bold;
+	font-size:20px;
+	transition: all .1s linear;
+}
+.title{
+	width:auto;
+	font-weight:bold;
+	font-size:40px;
+	position:fixed;
+	top:50%;
+	left:0;
+	transform:rotate(-90deg);
+}
+.content-wrapper{
+	width:75%;
+	height:2000px;
+	background-image:
+    linear-gradient(
+      to top, 
+      #00ffff, 
+      #FF00FF, 
+      #FFFF00
+    );
+	position:absolute;
+	top:0;
+	left:10rem;
+	z-index:-10;
+}
+.introduction p:first-child{
+	width:300px;
+	height:auto;
+	position:absolute;
+	top:5%;
+	left:11rem;
+	z-index:10;
+}
+.introduction img:nth-child(2){
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:5.1%;
+	right:11rem;
+	z-index:10;
+}
+.introduction p:nth-child(3){
+	width:300px;
+	height:auto;
+	position:absolute;
+	top:18%;
+	right:11rem;
+	z-index:10;
+}
+.introduction img:nth-child(4){
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:11%;
+	left:11rem;
+	z-index:10;
+}
+.introduction p:nth-child(5){
+	width:600px;
+	height:auto;
+	position:absolute;
+	top:24%;
+	right:11rem;
+	z-index:10;
+}
+
+/* The responsiveness needs fixing
+@media screen and (min-width: 360px) {
+	p,img {
+	  display:flex;#
+	  justify-content:center;
+	  width:100vw;
+	  height:auto;
+	}
+  }
+  
+  @media screen and (min-width: 800px) {
+	p,img {
+		display:flex;
+		width:100vw;
+		height:auto;
+	  }
+	} */
